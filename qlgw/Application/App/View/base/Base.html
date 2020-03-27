@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+// +--------------------------------------------------------------------------
+// | ZAIYOUDAO [ 载攸道 先顺得常 ] <http://www.zaiyoudao.com>
+// +--------------------------------------------------------------------------
+// | Copyright © 2009-2016 载攸道 版权所有 <TEL:4000-010-971>
+// +--------------------------------------------------------------------------
+// | Project: YiPHP [ 我会的仅仅是偷懒！ ] <http://www.yiphp.com>
+// +--------------------------------------------------------------------------
+// | Author: 牛很多戒很多不戒 <n@isdce.com> <http://juexue.wang>
+// +--------------------------------------------------------------------------
+-->
+<html>
+	<head>
+		
+		<!-- Title 开始 -->
+		<include file="base/Title" />
+		<!-- Title 结束 -->
+		
+		<!-- Meta 开始 -->
+		<include file="base/Meta" />
+		<!-- Meta 结束 -->
+		
+		<!-- Favicon 开始 -->
+		<include file="base/Favicon" />
+		<!-- Favicon 结束 -->
+		
+		
+		<!-- Theme CSS 开始 -->
+		<include file="base/BasicStyle" />
+		<!-- Theme CSS 结束 -->
+
+		
+		<!-- DIY风格开始 -->
+		<block name="Style"></block>
+		<!-- DIY风格结束 -->
+
+	</head>
+
+<body class="dashboard-page">
+
+
+  <!-- Start: Main -->
+  <div id="main">
+	
+	<!-- Header 开始 -->
+	<include file="base/Header" />
+	<!-- Header 结束 -->
+	
+
+    <!-- Sidebar 左侧菜单开始 -->
+	<include file="base/Sidebar" />
+    <!-- Sidebar 左侧菜单结束 -->
+	
+	
+	<!-- Content 主体内容开始 -->
+    <section id="content_wrapper">
+
+      <!-- 快捷导航按钮菜单开始 -->
+	  <include file="base/DropMenu" />
+      <!-- 快捷导航按钮菜单结束 -->
+
+      <!-- Content 主体标签开始 -->
+	  <block name="Topbar"></block>
+      <!-- Content 主体标签结束 -->
+
+      <!-- Section  主体内容开始 -->
+      <section id="content" class="table-layout animated fadeIn">
+			
+			<!-- 主体内容开始 -->
+			<block name="Content"></block>
+			<!-- 主体内容结束 -->
+       
+
+      </section>
+       <!-- Section  主体内容结束 -->
+
+      <!-- Content 底部版权显示内容开始 -->
+       <include file="base/Footer" />
+	  <!-- Content 底部版权显示内容结束 -->
+
+    </section>
+    <!-- Content 主体内容结束 -->
+    
+	<!-- Content 右侧显示内容结束 -->
+    <include file="base/SidebarRight" />
+	<!-- Content 右侧显示内容结束 -->
+
+  </div>
+  <!-- End: Main -->
+
+	<!-- Favicon 开始 -->
+	<include file="base/BasicScript" />
+	<!-- Favicon 结束 -->
+	
+	<!-- DIY脚本开始 -->
+	<block name="Script"></block>
+	<!-- DIY脚本结束 -->
+	<include file="base/MyScript" />
+</body>
+
+</html>

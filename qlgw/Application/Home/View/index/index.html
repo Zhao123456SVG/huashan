@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="http://localhost/test/Public/incubator-echarts-4.2.1/test/lib/esl.js"></script>
+        <script src="http://localhost/test/Public/incubator-echarts-4.2.1/test/lib/config.js"></script>
+        <script src="http://localhost/test/Public/incubator-echarts-4.2.1/test/lib/jquery.min.js"></script>
+        <script src="http://localhost/test/Public/incubator-echarts-4.2.1/test/lib/facePrint.js"></script>
+        <script src="http://localhost/test/Public/incubator-echarts-4.2.1/test/lib/testHelper.js"></script>
+        <link rel="stylesheet" href="http://localhost/test/Public/incubator-echarts-4.2.1/test/lib/reset.css" />
+    </head>
+    <body>
+        <style>
+            .test-title {
+                background: #146402;
+                color: #fff;
+                height:0px;
+            }
+        </style>
+    设备：
+    <form action="http://localhost/test/index.php/home/index/rock" method="get">
+    <select name="data" style="">
+        <foreach name="select" item="vo" >
+          <option value ='{$vo.device_sn}'>{$vo.name}-{$vo.id}</option>
+        </foreach>  
+    </select>
+    传感器类型：<select name="type" style="">
+          <option value ='1'>四合一传感器</option>
+          <option value ='2'>电偶(流)</option>
+          <option value ='3'>电阻-四合一</option>
+          <option value ='4'>电阻-电偶</option>
+          <option value ='5'>电阻-电阻</option>
+    </select>
+    <button value="提交">拉取</button>
+    </form>
+       
+
+
+
+
+
+    </body>
+</html>
