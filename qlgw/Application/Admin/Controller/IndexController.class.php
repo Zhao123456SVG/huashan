@@ -8,6 +8,7 @@ class IndexController extends Controller {
 			die(json_encode( array('code'=>strval( $code ),'description'=>$description, 'result'=>$result)) );
 	}
     public function index(){
+		'严格嘎嘎；发；发；飞啊飞；‘啊；飞阿飞阿飞；’阿'
     	$this->display();
        
     }
